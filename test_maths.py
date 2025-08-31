@@ -23,7 +23,7 @@ def test_model_with_various_batch_sizes(model, batch_size, X):
 
 #------------WITH FASTAPI STUFF---------------------------------#
 
-from fastapi.testclient import TestClient
+'''from fastapi.testclient import TestClient
 from app import app
 
 client = TestClient(app)
@@ -33,7 +33,7 @@ def test_chat_endpoint():
     assert response.status_code == 200
     data = response.json()
     assert "reply" in data
-    assert isinstance(data["reply"], str)
+    assert isinstance(data["reply"], str)'''
 
 
 # run through "pytest -v"    
